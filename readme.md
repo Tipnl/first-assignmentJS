@@ -6,4 +6,4 @@ It used an Event listener that listens for the click of the button to then add t
 
 Second Part is the form. So far i have only done the input field for First name to be added to the Table under the form, my intention is to add the rest as well when i have time. A user can fill in their first name, click the submit button, and their name will be added to the table under the form. Very basic but i'm still learning!
 
-Thank you for reading this.
+Thank you for reading this!
