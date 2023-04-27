@@ -35,11 +35,12 @@ vstBtn.addEventListener("click", function () {
   if (userCityVisited !== "") {
     emsg.innerHTML = "";
     cityInput.value = "";
+    cityVisited.innerHTML = "";
     citiesArr.push(userCityVisited);
 
     for (var i = 0; i < citiesArr.length; i++) {
-      var cLi = document.createElement("li");
-      var cityListItem = cLi.appendChild(document.createTextNode(citiesArr[i]));
+      var li = document.createElement("li");
+      var cityListItem = li.appendChild(document.createTextNode(citiesArr[i]));
       cityVisited.appendChild(cityListItem);
     }
   } else {
