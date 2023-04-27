@@ -40,8 +40,11 @@ vstBtn.addEventListener("click", function () {
 
     for (var i = 0; i < citiesArr.length; i++) {
       var li = document.createElement("li");
-      var cityListItem = li.appendChild(document.createTextNode(citiesArr[i]));
-      cityVisited.appendChild(cityListItem);
+      li.setAttribute("class", "city");
+      li.setAttribute("id", "city-" + i);
+      li.innerText = citiesArr[i];
+
+      cityVisited.appendChild(li);
     }
   } else {
     emsg.innerHTML = "Fill in a city you have visited to add it to the list.";
