@@ -20,3 +20,21 @@
   margin-bottom: 50px;
   padding: 20px 20px;
 }
+
+#error,
+#emsg {
+  color: red;
+}
+
+tbody {
+  text-align: center;
+}
+
+.visited {
+  padding: 10px;
+  width: 500px;
+}
+
+#city-input {
+  width: 250px;
+}

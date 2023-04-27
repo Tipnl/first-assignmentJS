@@ -45,6 +45,24 @@
       </div>
     </nav>
 
+    <div class="container first-div visited bg-success">
+      <div class="row">
+        <div class="col-sm">
+          <h3>Cities you have visited.</h3>
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Type in a city you have visited..."
+          />
+          <button id="btn-vst" type="button" class="btn btn-secondary">
+            Click to Add City.
+          </button>
+          <p id="emsg"></p>
+          <ul id="cityUserVst"></ul>
+        </div>
+      </div>
+    </div>
+
     <div class="container first-div bg-success">
       <div class="row">
         <div class="col-sm">My first div</div>
@@ -103,9 +121,15 @@
     </div>
 
     <div class="container fifth-div bg-primary">
-      <form>
+      <form id="form">
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" /><br /><br />
+        <p id="error"></p>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Your Name"
+        /><br /><br />
         <input type="checkbox" id="option1" name="option1" value="option1" />
         <label for="option1"> This is Option 1</label>
         <input type="checkbox" id="option2" name="option2" value="option2" />
@@ -127,29 +151,25 @@
           <option value="stockholm">Stockholm</option>
           <option value="moon">The moon</option></select
         ><br /><br />
-        <input type="Submit" value="Submit" />
+        <button id="btn-reg" type="button" class="btn btn-secondary">
+          Submit
+        </button>
       </form>
     </div>
 
     <div class="container second-div bg-warning">
       <div class="row justify-content-md-center">
         <div class="col-md-auto">
-          <table>
+          <table class="table">
             <thead>
               <tr>
-                <th>First name</th>
-                <th>Option 1 or 2</th>
-                <th>Where are you going</th>
-                <th>Place to go</th>
+                <th scope="col">First name</th>
+                <th scope="col">Option 1 or 2</th>
+                <th scope="col">Where are you going</th>
+                <th scope="col">Place to go</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-            </tbody>
+            <tbody id="tr-data"></tbody>
           </table>
         </div>
       </div>
